@@ -14,7 +14,7 @@ result = open('output.txt','w')
 
 # strip date
 def getDate(line):
-    return line[1:30]
+    return line[1:30]+' '
 
 # find line containing text
 def sepSource():
@@ -30,9 +30,15 @@ def sepDest():
             result.write(item+'\n')
 
 
+def sourceData():
+    srcLog=sepSource()
+    for item in srcLog.split('\n'):
+        if 'destIp' in item:
+            return getDate(item)+item.split('= ')[1]
 
 
-print(sepSource())
+print(sourceData())
+
 
 logs.close()
 result.close()

@@ -12,7 +12,6 @@ with open('logs.txt') as f:
         data = data + line
 
 
-
 result = open('output.txt','w')
 
 
@@ -69,11 +68,11 @@ def targetData(val):
     newLog=''
     targLog=sepDest()
     for item in targLog.split('\n'):
-        if 'AsyncRepDestTask-' in item and val == 'tcode':
-            newLog='task code:      '+getDate(item)+getTCode(item,'target')+'\n'
+        if 'ARD_STATE_STARTED' in item and val == 'tstart':
+            newLog='task started:      '+getDate(item)+getTCode(item,'target')+'\n'
             result.write(newLog)
-        if 'detail =' in item and val == 'status':
-            newLog='Status:     '+getDate(item)+getStatus(item)+'\n'
+        if 'ARD_TaskPass' in item and val == 'tend':
+            newLog='task ended:     '+getDate(item)+item.split('ARD_TaskPass:')[1]+'\n'
             result.write(newLog)
 
 
@@ -83,7 +82,8 @@ sourceData('srcVol')
 sourceData('status')
 
 newHeader('targ')
-targetData('status')
+targetData('tstart')
+targetData('tend')
 
 logs.close()
 result.close()

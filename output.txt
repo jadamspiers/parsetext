@@ -1,0 +1,47 @@
+6-07 18:33	10.65.118.150
+MAIN-NexGen-Infrastructure-A 	87ec:5
+6-07 18:33	Verification FAIL (EC:502)
+
+6-07 19:26	10.65.118.150
+MAIN-NexGen-Infrastructure-A 	87ec:1
+6-07 19:26	Verification FAIL (EC:502)
+
+6-07 22:38	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:1
+6-07 22:38	Verification FAIL (EC:502)
+
+6-08 01:28	5b7c:6
+6-08 15:49	6aaa:5
+6-08 15:50	5b7c:7
+6-08 15:55	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:2
+6-08 16:49	6aaa:6
+6-08 16:49	Verification FAIL (EC:502)
+
+6-08 17:55	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:3
+6-08 17:55	Replication job canceled
+
+6-09 09:30	6aaa:7
+6-09 15:50	5b7c:8
+6-10 09:30	6aaa:8
+6-10 15:50	5b7c:9
+6-11 09:30	6aaa:9
+6-11 15:50	5b7c:1
+6-12 09:30	6aaa:1
+6-12 15:50	5b7c:1
+6-13 09:30	6aaa:1
+6-13 14:21	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:4
+Success
+
+6-13 15:08	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:5
+Success
+
+6-13 15:35	10.65.118.151
+MAIN-NexGen-Infrastructure-A 	87ec:6
+6-13 15:50	5b7c:1
+Success
+
+6-13 17:04	5b7c:1
